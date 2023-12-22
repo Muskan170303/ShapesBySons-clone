@@ -1,0 +1,345 @@
+/* dark green - #07332F */
+/* light green - #9EADAC */
+/* grey - #CDD6D5 */
+/* white - #FFFFFF */
+/* font family (hero heading) - Ogg, sans-serif */
+
+*{
+    /* font-family: 'Ogg', sans-serif; */
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main: #07332F;
+    --secondary: #9EADAC;
+    --white: #FFFFFF;
+    --grey: #CDD6D5;
+    --grey2:#E6EAEA;
+    --secondary2:#395C59;
+    --secondary3:#1F4743;
+}
+
+/* hero-section */
+
+.navbar{
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px rgba(255, 255, 255, .2) solid;
+}
+.navbar img{
+    height: 3rem;
+    padding: 1em 4em;
+}
+
+.nav-items{
+    margin: 1rem;
+    font-family: "Manrope, sans-serif";
+}
+.nav-items a{
+    padding: 1em 1.2em;
+    text-decoration: none;
+    color: var(--white);
+}
+.nav-items button{
+    margin-right: 4em;
+    padding: 1.5em;
+    background-color: var(--secondary3);
+    border: none;
+    color: var(--white);
+}
+.nav-items button:hover{
+    background-color: var(--secondary2);
+}
+
+.hero{
+    background-color: var(--main);
+    font-family: "Ogg, sans-serif";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.hero h1{
+    color: var(--secondary);
+    font-size: 5rem;
+}
+.hero h1 .w-in-g{
+    color: var(--white);
+}
+.hero button{
+    margin: 2rem;
+    padding: 1.5em 4em;
+    background-color: var(--white);
+    border: none;
+    color: var(--main);
+}
+.hero button:hover{
+    background-color: var(--grey);
+}
+
+/* services-section */
+
+.service-text{
+    background-color: var(--main);
+    padding: 0 4rem;
+}
+.service-text h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--white);
+    padding: 0 .2em;
+    font-family: "Ogg, sans-serif";
+}
+.service-text h1 span{
+    font-size: 4rem;
+    color: var(--secondary);
+}
+.service-text p{
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: var(--grey);
+    width: 50%;
+    padding: 0 .3em;
+}
+.container{
+    padding: 2rem;
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-between;
+}
+.container .cards{
+    background-color: var(--secondary3);
+    margin: 1rem;
+    padding: 3em 2em;
+}
+.container .cards h2{
+    color: var(--white);
+    padding: 1rem 0;
+    font-weight: 500;
+
+}
+.container .cards p{
+    color: var(--grey);
+    font-size: 1.3rem;
+    line-height: 1.3em;
+}
+
+/* work-section */
+
+.work-head{
+    margin: 4rem 0 0 0;
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--main);
+    padding: 2rem 4rem;
+    font-family: "Ogg, sans-serif";
+}
+.work-head span{
+    font-size: 4rem;
+    color: var(--secondary);
+}
+.project{
+    margin: 2rem 5rem 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--main);
+    gap: 3rem;
+    transition: ease-in-out 0.5s;
+}
+.project h1{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.project span{
+    padding: .2em;
+    font-weight: 100;
+}
+.project img{
+    padding-top: 2rem;
+    height: 30em;
+    width: 40em;
+}
+.project:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px  gray;
+    transition: ease-in-out 0.5s;
+}
+.project1{
+    background-color: #FFF0BB;
+}
+.project2{
+    background-color: #E9F1FB;
+    margin-bottom: 2rem;
+}
+
+/* process-section */
+
+.process-text{
+    background-color: var(--grey2);
+    padding: 8em 0 2em 4rem;
+}
+.process-text h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--main);
+    padding: 0 .2em;
+    font-family: "Ogg, sans-serif";
+}
+.process-text h1 span{
+    font-size: 4rem;
+    color: var(--secondary);
+}
+.process-text p{
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: var(--secondary2);
+    width: 50%;
+    padding: 0 .3em;
+}
+.process-container{
+    padding: 2rem;
+    background-color: var(--grey2);
+    display: flex;
+    justify-content: space-between;
+}
+.process-container .cards{
+    background-color: var(--grey2);
+    margin: 1rem;
+    padding: 0 1em;
+    width: 50%;
+}
+.process-container .cards h2{
+    color: var(--main);
+    padding: 1rem 0;
+    font-weight: 500;
+
+}
+.process-container .cards p{
+    color: var(--secondary2);
+    font-size: 1.3rem;
+    line-height: 1.3em;
+}
+
+/* about-section */
+
+.about{
+    background-color: var(--grey2);
+    padding: 8em 0 2em 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.about h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--main);
+    padding: 0 .2em;
+    font-family: "Ogg, sans-serif";
+}
+.about h1 span{
+    font-size: 4rem;
+    color: var(--secondary);
+}
+.about .about-content{
+    width: 50%;
+}
+.about p{
+    font-size: 1.3rem;
+    color: var(--secondary3);
+    padding: 1em;
+}
+.about .about-content .img-div{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+.about .about-content .img-div .col img{
+    width: 95%;
+    /* padding: .4rem; */
+}
+.about .about-content .img-div .col div{
+    background-color: var(--white);
+    padding: 2rem;
+    margin: 2.5rem 1rem;
+    width: 60%;
+    position:relative;
+    bottom: 6rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+.about .about-content .img-div .col div span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: "Manrope, sans-serif";
+}
+
+/* contact-section */
+
+.chat{
+    background-color: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chat div{
+    margin: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chat div h3{
+    font-size: 8rem;
+    color: var(--secondary);
+}
+.chat div p{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+/* partner-section */
+
+.part a{
+    background-color: var(--white);
+    /* width: 10rem; */
+    position:fixed;
+    bottom: 1rem;
+    right: 2rem;
+    padding: 1rem 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--main);
+}
+.part a span{
+    font-family:cursive;
+    font-weight: bold;
+}
+
+/* footer-section */
+
+.footer{
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    
+}
+.footer span{
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1rem;
+
+}
